@@ -36,9 +36,11 @@ const Form = (props) => {
       .required("Password is required"),
     terms: Yup.boolean().oneOf([true], "You must accept Validation"),
   });
+    
 
+    
   useEffect(() => {
-      formSchema.isValid(user.the((valid) => {
+      formSchema.isValid(user).then(valid => {
         setUser(!valid);
       });
     },
@@ -73,7 +75,7 @@ const Form = (props) => {
     password: "",
     terms: "",
   });
-
+  
   return (
     <form className="form" onSubmit={submitForm}>
       {/* <label className="name labels" htmlFor="name">
