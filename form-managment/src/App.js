@@ -2,7 +2,6 @@ import React, {useReducer, useState} from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Form from "./components/Form";
-import Forms from "./components/Forms";
  
 
 function App() {
@@ -23,8 +22,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div>
-          <Form addNewUser={addNewUser} />
-          <Forms user={user} />
+          <h1>New Login</h1>
+          <Form />
         </div>
       </header>
     </div>
