@@ -5,7 +5,8 @@ describe("Testing our form", () => {
   it("fills out name", () => {
     const name = "Alex Andrew";
     const email = "pytormal@live.com";
-      const password = "passwordS";
+    //   const password = "passwordS";
+      const password = "  ";
     //we are filling out the name input and making sure that it has the correct value
     cy.get("input#name").type(name).should("have.value", name);
     //we are filling out the email input and making sure that it has the correct value
