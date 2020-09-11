@@ -133,7 +133,14 @@ export default function Form() {
             <p className="error">{errState.terms}</p>
           ) : null}
         </label>
-        <button disabled={!buttonDisabled}>Submit</button>
+        <button
+          type="button"
+          id="submit"
+          name="submit"
+          disabled={!buttonDisabled}
+        >
+          Submit
+        </button>
       </ul>
     </form>
   );
